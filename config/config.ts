@@ -9,8 +9,10 @@ export default defineConfig({
     hmr: false,
   },
   outputPath: "./dist",
-  publicPath: "/",
+  publicPath: "./",
   routes: route,
+  history:{type:'hash'},
+  hash:true,
   theme: {
     'primary-color': "rgba(24, 144, 255, 1)",
   },
@@ -21,7 +23,7 @@ export default defineConfig({
    ],
    proxy: {
     '/api': {
-      target: 'http://localhost:3001/',
+      target: 'http://localhost:3000/',
       changeOrigin: true,
       pathRewrite: { '^/': '' },
     },

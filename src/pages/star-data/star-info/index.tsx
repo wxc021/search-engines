@@ -36,7 +36,7 @@ const StarInfo =(props:any)=> {
     },
 ])
   const getData = () => {
-    request.post('/getInit', {
+    request.post('/getMenu', {
       data:{
         adc:'123',
         name:'123'
@@ -212,7 +212,7 @@ const StarInfo =(props:any)=> {
         </div>
       </div>
       <div className="star-potential">
-        <div style={{marginBottom:20}} className='charts-area-title'>口碑指数</div>
+        <div style={{marginBottom:20}} className='charts-area-title'>潜力指数</div>
         <div className="potential-wrap">
           <div className="potential-left">
             <div className="potential-line">
