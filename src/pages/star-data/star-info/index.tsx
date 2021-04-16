@@ -166,7 +166,7 @@ const StarInfo =(props:any)=> {
               <img src={kunkunImg} alt="蔡徐坤"/>
               <div className="star-details-info">
                 <h2>蔡徐坤</h2>
-                <p>危机探查: <div className="icon-btn">政治相关</div><div className="icon-btn">两性相关</div></p>
+                <p>危机探查: <span className="icon-btn">政治相关</span><span className="icon-btn">两性相关</span></p>
                 <p>出生日期: <span className="mr20">1982-08-02</span>身高:<span>181cm</span></p>
                 <p>经纪公司:<span>海尧（上海）影视传媒有限公司</span></p>
                 <p>基本资料:</p>
@@ -175,10 +175,10 @@ const StarInfo =(props:any)=> {
             </div>
             <div className="star-details-stars">
               <p>综合价值:<span className="star-score">92</span></p>
-              <p>传播指数:<Rate disabled value={3} className="star-style"></Rate>3星</p>
-              <p>口碑指数:<Rate disabled value={3} className="star-style"></Rate>3星</p>
-              <p>潜力指数:<Rate disabled value={3} className="star-style"></Rate>3星</p>
-              <p>危机指数:<Rate disabled value={3} className="star-style"></Rate>3星</p>
+              <div>传播指数:<Rate disabled value={3} className="star-style"></Rate>3星</div>
+              <div>口碑指数:<Rate disabled value={3} className="star-style"></Rate>3星</div>
+              <div>潜力指数:<Rate disabled value={3} className="star-style"></Rate>3星</div>
+              <div>危机指数:<Rate disabled value={3} className="star-style"></Rate>3星</div>
             </div>
           </div>
         </div>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 引入 layui.css -->
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  
+  <!-- 引入 layui.js -->
+  <script src="./layui/layui.js"></script>
+  <style>
+    .qual-insurance{
+      width: 894px;
+      margin: 0 auto;
+    }
+    .qual-insurance .qual-insurance-header img{
+      width: 396px;
+      height: 28px;
+      display: block;
+    }
+    .qual-insurance .qual-insurance-tables{
+      margin-top: 15px;
+    }
+    .qual-insurance .qual-insurance-tables table{
+      border-collapse:collapse;  
+      border-spacing:0px;  
+      border: none;
+      text-align: center;
+      font-size: 14px;
+    }
+    .qual-insurance .qual-insurance-tables table thead{
+    }
+    .qual-insurance .qual-insurance-tables table thead th{
+      /* border-bottom: 1px solid #000; */
+      color: #333;
+      font-weight: 600;
+      line-height: 20px;
+      padding-bottom: 5px;
+      border-bottom: 4px solid #000;
+    }
+    .qual-insurance .qual-insurance-tables table tbody tr{
+      border-bottom: 2px solid #000;
+    }
+    .qual-insurance .qual-insurance-tables table tbody tr:last-child{
+      border-bottom: none;
+      border-bottom: 4px solid #000;
+    }
+    .qual-insurance .qual-insurance-tables table tbody td{
+      color: #333;
+      font-weight: 400;
+      padding: 13px 5px 7px 5px ;
+    }
+    #pagers{
+      text-align: right;
+      padding-top: 12px;
+    }
+    #pagers .layui-laypage a:hover{
+      color: #E68543;
+    }
+    #pagers .layui-laypage input:focus, .layui-laypage select:focus{
+      border-color:#E68543 !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="qual-insurance">
+    <div class="qual-insurance-header">
+      <img src="./images/product.svg" alt="">
+    </div>
+    <div class="qual-insurance-tables">
+      <table>
+        <thead>
+          <th width="60">序号</th>
+          <th>产品名称</th>
+          <th>备案名称</th>
+          <th>备案编号</th>
+          <th width="80">险种类别</th>
+          <th>承保公司</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>中小企业雇主责任险(司机保）</td>
+            <td>安盛天平旅行个人人身意外伤害
+              保险仅承保境外旅行批单</td>
+            <td>(人保财险)(备-医疗保险)[2016]（附）075号</td>
+            <td>责任险</td>
+            <td>众安在线财产保险股份有限公司</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>中小企业雇主责任险(司机保）</td>
+            <td>安盛天平旅行个人人身意外伤害
+              保险仅承保境外旅行批单</td>
+            <td>(人保财险)(备-医疗保险)[2016]（附）075号</td>
+            <td>责任险</td>
+            <td>众安在线财产保险股份有限公司</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>中小企业雇主责任险(司机保）</td>
+            <td>安盛天平旅行个人人身意外伤害
+              保险仅承保境外旅行批单</td>
+            <td>(人保财险)(备-医疗保险)[2016]（附）075号</td>
+            <td>责任险</td>
+            <td>众安在线财产保险股份有限公司</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="pagers"></div>
+  </div>
+  <script>
+    layui.use('laypage', function(){
+      var laypage = layui.laypage;
+      laypage.render({
+        elem: 'pagers'
+        ,count: 100
+        ,limit:15
+        ,layout: ['skip','prev', 'page', 'next']
+        ,prev: '<i class="layui-icon layui-icon-left"></i>'
+        ,next: '<i class="layui-icon layui-icon-right"></i>',
+        theme: '#E68543'
+        ,jump: function(obj){
+          console.log(obj)
+        }
+      });
+    });
+  </script>
+</body>
+</html>

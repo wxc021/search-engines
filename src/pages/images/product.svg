@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="396px" height="28px" viewBox="0 0 396 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="MFLangQian_Noncommercial-Regular, MF LangQian (Noncommercial)" font-weight="normal">
+        <g id="保险产品" transform="translate(-259.000000, -227.000000)">
+            <g id="编组" transform="translate(259.000000, 226.000000)">
+                <text id="Business-license" font-size="28" fill="#EBEBEB">
+                    <tspan x="104" y="25">Business license</tspan>
+                </text>
+                <text id="保险产品" font-size="26" fill="#EE5104">
+                    <tspan x="0" y="25">保险产品</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

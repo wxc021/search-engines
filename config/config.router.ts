@@ -1,5 +1,6 @@
 export default  [
   { path: '/', component: '@/pages/login' },
-  { exact: true, path: '/login', component: '@/pages/login' },
-  { exact: true, path: '/star-data/star-info', component: '@/pages/star-data/star-info' },
+  { path: '/login', component: '@/pages/login' },
+  { path: '/star-data/star-info', component: '@/pages/star-data/star-info' },
+  { path: '/star-data/star-comprehensive', component: '@/pages/star-data/star-comprehensive' },
 ];
