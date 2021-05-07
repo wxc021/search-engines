@@ -4,6 +4,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  title: '配置管理系统',
   dva: {
     immer: true,
     hmr: false,
