@@ -4,6 +4,7 @@
     "start": "umi dev",
     "build": "umi build",
     "postinstall": "umi generate tmp",
+    "analyze":"ANALYZE=1 umi dev",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
